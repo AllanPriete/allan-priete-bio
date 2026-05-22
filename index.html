@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Allan Priete — Corretor Premium ABC Paulista</title>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1753759405386771');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1753759405386771&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --preto:  #201E1E;
+      --ouro:   #B68E58;
+      --ouro2:  #D4AA72;
+      --branco: #FFFFFF;
+      --cinza:  #2E2C2C;
+    }
+
+    html, body {
+      min-height: 100vh;
+      background: var(--preto);
+      font-family: 'Jost', sans-serif;
+      color: var(--branco);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 48px 24px 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    /* ── FOTO ── */
+    .avatar-wrap {
+      position: relative;
+      width: 104px;
+      height: 104px;
+      margin-bottom: 18px;
+    }
+
+    .avatar-ring {
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--ouro2), var(--ouro), #8B6A3E);
+    }
+
+    .avatar {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid var(--preto);
+      z-index: 1;
+    }
+
+    /* ── IDENTIDADE ── */
+    .name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 2px;
+      color: var(--branco);
+      text-align: center;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .badge {
+      color: var(--ouro);
+      font-size: 14px;
+    }
+
+    .handle {
+      font-size: 13px;
+      color: var(--ouro);
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--ouro);
+      opacity: 0.4;
+      margin: 0 auto 14px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      line-height: 1.6;
+      max-width: 280px;
+      margin-bottom: 36px;
+      letter-spacing: 0.3px;
+    }
+
+    .tagline strong {
+      color: rgba(255,255,255,0.85);
+      font-weight: 500;
+    }
+
+    /* ── BOTÕES ── */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 16px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+      opacity: 0.9;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--ouro2) 0%, var(--ouro) 100%);
+      color: var(--preto);
+    }
+
+    .btn-primary .btn-label { font-weight: 600; }
+
+    .btn-secondary {
+      background: var(--cinza);
+      color: var(--branco);
+      border: 1px solid rgba(182,142,88,0.2);
+    }
+
+    .btn-icon {
+      font-size: 18px;
+      opacity: 0.85;
+    }
+
+    .btn-arrow {
+      font-size: 16px;
+      opacity: 0.6;
+    }
+
+    /* ── STATS ── */
+    .stats {
+      display: flex;
+      gap: 32px;
+      margin: 36px 0 0;
+      padding-top: 28px;
+      border-top: 1px solid rgba(182,142,88,0.15);
+      width: 100%;
+      justify-content: center;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .stat-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      color: var(--ouro);
+      letter-spacing: 1px;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      margin-top: 36px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.2);
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Avatar -->
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img class="avatar" src="https://i.ibb.co/xKSdyQV6/allan-priete-foto.jpg" alt="Allan Priete">
+    </div>
+
+    <!-- Identidade -->
+    <div class="name">Allan Priete <span class="badge">✓</span></div>
+    <div class="handle">@allan_priete</div>
+    <div class="divider"></div>
+    <p class="tagline">
+      Corretor premium no <strong>ABC Paulista</strong>.<br>
+      Captação exclusiva com <strong>inteligência de dados</strong><br>
+      e imagens em experiência <strong>imersiva 360°</strong>.
+    </p>
+
+    <!-- CTAs -->
+    <div class="links">
+
+      <a class="btn btn-primary"
+         href="https://wa.me/5511947802317?text=Ol%C3%A1%20Allan%2C%20gostaria%20de%20avaliar%20meu%20im%C3%B3vel"
+         onclick="fbq('track','Contact')"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">💬</span>
+        <span class="btn-label">Quero avaliar meu imóvel</span>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://www.instagram.com/allan_priete/"
+         onclick="fbq('track','ViewContent', {content_name:'perfil_instagram'})"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">📸</span>
+        <span class="btn-label">Ver imóveis exclusivos</span>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://www.instagram.com/p/DYnR9mXGfBL/"
+         onclick="fbq('track','ViewContent', {content_name:'como_funciona_captacao'})"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">🏆</span>
+        <span class="btn-label">Como funciona a captação</span>
+        <span class="btn-arrow">›</span>
+      </a>
+
+      <a class="btn btn-secondary"
+         href="https://www.youtube.com/@corretorallanpriete/videos"
+         onclick="fbq('track','ViewContent', {content_name:'imoveis_360_youtube'})"
+         target="_blank" rel="noopener">
+        <span class="btn-icon">▶️</span>
+        <span class="btn-label">Imóveis em experiência 360°</span>
+        <span class="btn-arrow">›</span>
+      </a>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value">ABC</span>
+        <span class="stat-label">Paulista</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">360°</span>
+        <span class="stat-label">Imersivo</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">100%</span>
+        <span class="stat-label">Exclusivo</span>
+      </div>
+    </div>
+
+    <div class="footer">Allan Priete Propriedades Exclusivas · Diadema SP</div>
+
+  </div>
+</body>
+</html>
